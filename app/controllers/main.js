@@ -10,21 +10,21 @@ mainController.onKeyboardStroke = function(data) {
   this.sensors.keyboard.info(data);
   switch (data) {
     case ' ':
-      this.controllers.arDroneFlight.stop();
-      this.controllers.arDroneFlight.land();    
+      this.actuators.arDroneFlight.stop();
+      this.actuators.arDroneFlight.land();    
       break;
     case 't':
-      this.controllers.arDroneFlight.takeoff();
-      this.controllers.arDroneFlight.hover();
+      this.actuators.arDroneFlight.takeoff();
+      this.actuators.arDroneFlight.hover();
       break;
     case 'c':
-      this.controllers.arDroneFlight.clockwise(7);
+      this.actuators.arDroneFlight.clockwise(7);
       break;
     case 'l':
-      this.controllers.arDroneFlight.left(1);
+      this.actuators.arDroneFlight.left(1);
       break;
     case 'h':
-      this.controllers.arDroneFlight.hover();
+      this.actuators.arDroneFlight.hover();
       break;
   }
 }
@@ -33,19 +33,19 @@ mainController.start = function () {
   var self = this;
 
   // takeoff
-  this.controllers.arDroneFlight.takeoff();
+  this.actuators.arDroneFlight.takeoff();
 
   // after a brief delay, fly in a circle clockwise once
   setTimeout(function() {
-    self.controllers.arDroneFlight.left(1);
-    self.controllers.arDroneFlight.clockwise(7);
+    self.actuators.arDroneFlight.left(1);
+    self.actuators.arDroneFlight.clockwise(7);
   },
   2000);
   
   // stop and land
   setTimeout(function() {
-    self.controllers.arDroneFlight.hover();
-    self.controllers.arDroneFlight.land();
+    self.actuators.arDroneFlight.hover();
+    self.actuators.arDroneFlight.land();
   },
   4000);
 }

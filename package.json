@@ -8,7 +8,8 @@
     "ribbons.application": "",
     "ribbons.platforms.ar.drone": "",
     "ribbons.controller": "",
-    "ribbons.sensors.keyboard.mac": ""
+    "ribbons.sensors.keyboard.mac": "",
+    "ribbons.actuators.flight": ""
   },
   "keywords": [
     "ribbons",

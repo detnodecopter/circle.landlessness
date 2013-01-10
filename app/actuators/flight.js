@@ -1,4 +1,4 @@
-var Flight = require('ribbons.controllers.flight');
+var Flight = require('ribbons.actuators.flight');
 
 var arDroneFlight = new Flight();
 
@@ -9,4 +9,3 @@ arDroneFlight.init = function () {
 module.exports = {
   arDroneFlight: arDroneFlight
 }
-
