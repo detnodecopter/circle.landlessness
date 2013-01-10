@@ -15,9 +15,10 @@ mainController.onKeyboardStroke = function(data) {
       break;
     case 't':
       this.controllers.arDroneFlight.takeoff();
+      this.controllers.arDroneFlight.hover();
       break;
     case 'c':
-      this.controllers.arDroneFlight.clockwise(6);
+      this.controllers.arDroneFlight.clockwise(7);
       break;
     case 'l':
       this.controllers.arDroneFlight.left(1);
@@ -31,31 +32,22 @@ mainController.onKeyboardStroke = function(data) {
 mainController.start = function () {
   var self = this;
 
-  var radius = 1;     // meters
-  var flightTime = 1; // seconds
-
-  var angularVelocity = 2 * Math.PI / flightTime; 
-  // radians per second
-  
-  var speed = 2 * Math.PI * radius / flightTime; 
-  // meters per second
-
   // takeoff
   this.controllers.arDroneFlight.takeoff();
 
   // after a brief delay, fly in a circle clockwise once
   setTimeout(function() {
-    self.controllers.arDroneFlight.left(speed);
-    self.controllers.arDroneFlight.clockwise(angularVelocity);
+    self.controllers.arDroneFlight.left(1);
+    self.controllers.arDroneFlight.clockwise(7);
   },
-  1000);
+  2000);
   
   // stop and land
   setTimeout(function() {
     self.controllers.arDroneFlight.hover();
     self.controllers.arDroneFlight.land();
   },
-  10000);
+  4000);
 }
 
 module.exports = {
