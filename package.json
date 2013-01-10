@@ -1,5 +1,5 @@
 {
-  "name": "landlessness.circle",
+  "name": "circle.landlessness",
   "version": "0.0.1",
   "author": "Brian Mulloy <b@ribbonfarm.org>",
   "description": "have the ar.drone fly in a circle around an obstacle.",
