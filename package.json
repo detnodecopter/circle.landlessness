@@ -1,0 +1,28 @@
+{
+  "name": "landlessness.circle",
+  "version": "0.0.1",
+  "author": "Brian Mulloy <b@ribbonfarm.org>",
+  "description": "have the ar.drone fly in a circle around an obstacle.",
+  "devDependencies": {},
+  "dependencies": {
+    "ribbons.application": "",
+    "ribbons.platforms.ar.drone": "0.0.3",
+    "ribbons.controller": "0.0.6",
+    "ribbons.sensors.keyboard.mac": "0.0.3"
+  },
+  "keywords": [
+    "ribbons",
+    "framework",
+    "ar.drone",
+    "robotics",
+    "detnodecopter"
+  ],
+  "main": "index.js",
+  "directories": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/detnodecopter/landlessness.001.circle.git"
+  },
+  "license": "MIT"
+}

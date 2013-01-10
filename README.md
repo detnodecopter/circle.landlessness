@@ -1,0 +1,1 @@
+# DetNodeCopter 001 Circle - landlessness
