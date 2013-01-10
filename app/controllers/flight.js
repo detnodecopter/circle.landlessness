@@ -1,4 +1,4 @@
-var Flight = require('../../../../robot-ribbons/ribbons.controllers.flight');
+var Flight = require('ribbons.controllers.flight');
 
 var arDroneFlight = new Flight();
 

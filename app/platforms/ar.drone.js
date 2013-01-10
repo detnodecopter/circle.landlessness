@@ -1,4 +1,4 @@
-var ARDrone = require('../../../../robot-ribbons/ribbons.platforms.ar.drone');
+var ARDrone = require('ribbons.platforms.ar.drone');
 
 module.exports = {
   arDrone: new ARDrone()

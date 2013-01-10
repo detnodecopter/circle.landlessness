@@ -1,4 +1,4 @@
-var Application = require('../../../robot-ribbons/ribbons.application');
+var Application = require('ribbons.application');
 
 var app = new Application({
   directory: __dirname,

@@ -6,9 +6,9 @@
   "devDependencies": {},
   "dependencies": {
     "ribbons.application": "",
-    "ribbons.platforms.ar.drone": "0.0.3",
-    "ribbons.controller": "0.0.6",
-    "ribbons.sensors.keyboard.mac": "0.0.3"
+    "ribbons.platforms.ar.drone": "",
+    "ribbons.controller": "",
+    "ribbons.sensors.keyboard.mac": ""
   },
   "keywords": [
     "ribbons",
